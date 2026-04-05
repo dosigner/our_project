@@ -1,0 +1,7 @@
+.weather-info{
+    display: inline-flex;
+    color:white;
+    font-size: 40px;
+    transform : translateX(50%);
+    
+}

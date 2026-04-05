@@ -1,0 +1,85 @@
+.question{
+    color:var(--white);
+    position: absolute;
+    rotate:-90deg;
+    top:50%;
+    transform: translateY(-50%);
+
+    font-size: 36px;
+    font-family: "Pretendard";
+    font-weight:100;
+    font-variation-settings: 'wght' 50, 'wdth' 60;
+    animation: breathe 3500ms infinite forwards;
+}
+
+@keyframes breathe {
+	70% {
+		font-variation-settings: 'wght' 400, 'wdth' 300;
+	}
+	
+	100% {
+		font-variation-settings: 'wght' 50, 'wdth' 60;
+	}
+}
+
+
+.answer{
+    rotate:-90deg;
+    display: flex;
+    position: relative;
+    top:-200px;
+}
+
+.inform {
+    rotate:-90deg;
+    display: flex;
+    position: absolute;
+    top: 540px;
+    left: 720px;
+}
+
+.add-answer{
+    rotate:-90deg;
+    display: flex;
+    position: relative;
+    left:400px;
+    top:-600px;
+}
+
+.circle-box{
+    position: absolute;
+}
+
+.talk {
+    position:fixed;
+    background-color: #000;
+    overflow: hidden;
+    width:1920px;
+    height:1080px;
+    display: flex;  
+}
+
+.talk-cute {
+    position:fixed;
+    background-color: #ffdd41;
+    overflow: hidden;
+    width:1920px;
+    height:1080px;
+    display: flex;  
+}
+
+.img_hand li{
+    display:inline-flex;
+    margin:25px;
+}
+
+.bell {
+    width:120px;
+    height:120px;
+    background-image: url("../../public/img/mood_plate/help.png");
+    border-radius: 60px;
+    position:fixed;
+    left: 1700px;
+    top: 500px;
+    opacity: 0.7;
+}

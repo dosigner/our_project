@@ -1,0 +1,25 @@
+.ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 256px;
+    height: 256px;
+    background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(245,240,197,0.2) 15%, rgba(255,255,255,0) 60%);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 999;
+    pointer-events: none;
+  }
+
+  .light {
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:8px;
+    height:8px;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+
+    background-color: whitesmoke;
+  }

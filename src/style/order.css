@@ -1,0 +1,246 @@
+.order-system{
+    transform-origin: center;
+    position: absolute;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    rotate:-90deg;
+    width:1080px;
+}
+
+.demoPage{
+    background-color: black;
+    /*background-image: url("../../public/img/white-paper-texture.jpg");*/
+}
+
+/* 책 안에 요소들 */
+.page-header{
+    color:beige;
+    display:flex;
+    margin-left:50px;
+    font-family: "Pretendard";
+    height:80px;
+    align-items: center;
+}
+
+.select-header{
+    color:beige;
+    display:flex;
+    font-family: "Pretendard";
+    height:100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-variation-settings: 'wght' 200, 'wdth' 60;
+    animation: breathe 3500ms infinite forwards;
+}
+
+@keyframes breathe {
+	70% {
+		font-variation-settings: 'wght' 600, 'wdth' 300;
+	}
+	
+	100% {
+		font-variation-settings: 'wght' 200, 'wdth' 60;
+	}
+}
+
+.select-desc{
+    color:beige;
+    margin:0 40px 0 40px;
+    font-size: 18px;
+    font-variation-settings: 'wght' 300, 'wdth' 100;
+    line-height: 30px;
+    font-family: "Pretendard";
+}
+
+.select-extra{
+    margin:60px 40px 60px 40px;
+    font-size: 18px;
+    font-variation-settings: 'wght' 500, 'wdth' 100;
+    line-height: 30px;
+    font-family: "Pretendard";
+    border:"solid" 2px;
+    border-radius:"5px";
+    border-color:"rgba(0,0,0,0.2)";
+    color:rgb(42, 165, 83);
+}
+
+.select-number{
+    color:beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Pretendard";
+    height:100px;
+}
+.select-button-box{
+    display: flex;
+    justify-content: center;
+}
+
+.select-food-box{
+    width:1080px;
+    height:1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-food-img{
+    
+    scale:40%;
+    margin-bottom: 200px;
+}
+
+/* 메뉴판 목록 */
+.recommend{
+    margin : 0;
+    margin-left:60px;
+    margin-top:30px;
+    color:rgb(255, 255, 255);
+    font-family: "Pretendard";
+    font-variation-settings: 'wght' 200, 'wdth' 60;
+}
+
+.menu-elem{
+    display: flex;
+    height: 100px;
+    margin: 60px 60px 60px 40px;
+    flex-direction: row;
+    font-size: 18px;
+    /*flex안에서 div에 높이 중앙정렬*/
+    align-items: center;
+    font-family: "Pretendard";
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color:white;
+}
+
+.menu-elem.recommend{
+    margin: 10px 40px 10px 20px
+}
+
+.menu-elem-name{
+    margin:0 auto 0 30px;
+    margin-right:auto;
+    font-variation-settings: 'wght' 400, 'wdth' 60;
+}
+
+.menu-elem-price{
+    margin:0 20px 0 auto;
+    font-variation-settings: 'wght' 700, 'wdth' 60;
+}
+
+
+
+/* 주문내역 */
+.order-elem{
+    color:beige;
+    display: flex;
+    height: 60px;
+    margin: 20px 20px 0px 20px;
+    flex-direction: row;
+    font-size: 20px;
+    /*flex안에서 div에 높이 중앙정렬*/
+    align-items: center;
+    font-family: "Pretendard";
+    opacity: 0.8;
+    border-bottom-style: dotted;
+    border-width: 2px;
+}
+
+.order-elem-name{
+    margin:0 auto 0 30px;
+    margin-right:auto;
+    font-variation-settings: 'wght' 500, 'wdth' 60;
+    
+}
+
+.order-elem-price{
+    
+    margin:0 20px 0 auto;
+    font-variation-settings: 'wght' 600, 'wdth' 60;
+}
+
+.total-price{
+    color:beige;
+    position: absolute;
+    left:60px;
+    bottom:35px;
+    font-family: "Pretendard";
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    flex-direction: row;
+}
+
+.total-price-tag{
+    
+}
+
+.total-price-value{
+    margin-left:230px
+}
+
+
+
+
+
+/* 버튼 디자인 */
+.button-box {
+    display:flex;
+    justify-content: space-between;
+}
+
+.flip-button{
+    background: none;
+    position: relative;
+    display: inline-flex;
+    margin:20px;
+    font-size:32px;
+}
+
+.select-button {
+    background: rgba(114, 250, 245,0.5);
+    color: black;
+    display: inline-flex;
+    font-family: "Pretendard";
+    font-variation-settings: 'wght' 200, 'wdth' 100;
+    font-size:36px;
+    padding:30px 0px 15px 50px;
+    width:200px;
+    height:100px;
+    margin:0px 50px 15px 50px;
+}
+
+.page-button{
+    background-color: none;
+    font-size: 32px;
+    font-variation-settings: 'wght' 100, 'wdth' 100;
+    border-radius: 40px;
+    height:80px;
+    width:150px;
+    margin:40px;
+}
+
+.order-list-3dbutton{
+    background-color: none;
+    font-size: 36px;
+    width:240px;
+    margin:40px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.order-list-btn{
+    display: inline-flex;
+    align-items: center;
+    font-size:40px;
+    color: white;
+    width:320px;
+    margin:0;
+}

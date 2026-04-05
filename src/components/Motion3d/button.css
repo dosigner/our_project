@@ -1,0 +1,240 @@
+
+.answer {
+    rotate: -90deg;
+    display: inline-flex;
+}
+/****************/
+
+body,
+html {
+    font-family: "Poppins";
+    overflow: hidden;
+}
+
+button  {
+    
+    --pink: #db07d1;
+    --red: #f2056f;
+    --blue: #61dafb;
+    --mint: #96ffdf;
+    
+    --green: rgb(3, 209, 0);
+    --lime: rgb(230, 255, 0);
+
+
+    position: relative;
+    text-align: center;
+    display: flex;
+
+    appearance: none;
+    border: none;
+    cursor: none;
+    margin: 60px;
+
+    background-color: black;
+    color: #fff;
+    border-radius: 60px;
+    outline: none;
+    padding: 12px 25px;
+    
+    font-family: "Poppins";
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+
+
+.shapes {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: 60px;
+    background: linear-gradient( 60deg,
+      var(--purple) 0%,
+      var(--blue) 70%
+    );
+}
+
+.shapes .container {
+    position: absolute;
+    top: -125px;
+    bottom: -125px;
+    left: -125px;
+    right: -125px;
+    width: calc(100% + 250px);
+    pointer-events: none;
+}
+  
+.shapes canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.shapes.Yes {
+    background: linear-gradient( 60deg,
+      var(--green) 0%,
+      var(--blue) 70%
+    );
+}
+
+.shapes.No {
+    background: linear-gradient( 60deg,
+      var(--red) 0%,
+      var(--pink) 70%
+    );
+}
+.shapes.local {
+    background: linear-gradient( 60deg,
+      #ff9735 0%,
+      #d0ba58 70%
+    );
+}
+.shapes.trip {
+    background: linear-gradient( 60deg,
+        var(--green) 0%,
+        var(--blue) 50%
+    );
+}
+.shapes.work {
+    background: linear-gradient( 60deg,
+      #fff 0%,
+      grey 70%
+    );
+}
+.shapes.page-btn {
+    background: linear-gradient( 60deg,
+      var(--blue),
+      var(--mint) 70%
+    );
+}
+
+.shapes.list-btn {
+    background: none;
+}
+
+  
+.blush {
+    position: absolute;
+    bottom: -15px;
+    width: 100px;
+    height: 30px;
+    filter: blur(20px);
+}
+
+.blush-order {
+    position: absolute;
+    bottom: -15px;
+    width: 60px;
+    height: 20px;
+    filter: blur(23px);
+}
+
+.blush.pink {
+    right: 20px;
+    background: var(--pink);
+}
+  
+.blush.red {
+    left: 20px;
+    background: var(--red);
+}
+
+.blush.blue {
+    right: 20px;
+    background: var(--blue);
+}
+
+/*Order button*/
+.blush-order.blue {
+    right: 20px;
+    background: var(--blue);
+}
+.blush-order.blueR{
+    left: 20px;
+    background: var(--blue);
+}
+.blush-order.mint {
+    right: 20px;
+    background: var(--mint);
+}
+.blush-order.mintR{
+    left: 20px;
+    background: var(--mint);
+}
+
+
+
+
+
+.blush.green {
+    left: 20px;
+    background: var(--green);
+}
+
+.blush.orange {
+    right: 20px;
+    background: #ffb46d;
+}
+  
+.blush.yellow {
+    left: 20px;
+    background: #ffe46d;
+}
+
+
+.blush.white {
+    right: 20px;
+    background: white;
+}
+  
+.blush.grey{
+    left: 20px;
+    background: rgb(61, 61, 61);
+}
+
+  
+.label {
+    width: 200px;
+    padding: 20px 0;
+    /*transform: translateZ(0);*/
+    font-family: "Pretendard";
+    font-weight: 700;
+    z-index: 1;
+}
+
+.label.page{
+    font-weight:600;
+    padding: 5px 0;
+}
+
+.label.list{
+    font-weight:600;
+    padding:5px 0;
+}
+
+
+
+  
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2)
+      format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+      U+FEFF, U+FFFD;
+  }
+  
